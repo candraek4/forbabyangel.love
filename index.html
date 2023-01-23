@@ -1,0 +1,133 @@
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport"
+  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  /><link
+    href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <link
+    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+  <head> 
+    <title> Hello Ms Angela a.k.a My Only Love, My Forever :D</title>
+  </head>
+  <style>
+    body {
+      background-image: url(https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: bottom;
+    }
+    body::before {
+      content: "" !important;
+      color: transparent !important;
+    }
+  </style>
+  <body>
+    <div id="bodyblur">
+      <!-- <img
+        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
+        width="100%"
+        height="100%"
+      /> -->
+    </div>
+
+    <div id="Content">
+      <div class="image">
+        <img
+          src="https://i.postimg.cc/W4xjf6yM/peachcat-peachcat-and-goma.gif"
+          width="130px"
+          height="130px"
+        />
+      </div>
+      <div>
+        <blockquote>
+          <p id="text"></p>
+          <p id="text2"></p>
+        </blockquote>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function play() {
+        var audio = new Audio(
+          "https://sndup.net/tqdx/d"
+        )
+        audio.play()
+      }
+
+      const swals = Swal.mixin({
+        allowOutsideClick: false,
+        cancelButtonColor: "#FF0040",
+      })
+      const swalsy = Swal.mixin({
+        confirmButtonText: "Iya",
+        allowOutsideClick: false,
+      })
+      const swalst = Swal.mixin({
+        allowOutsideClick: false,
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+      })
+
+      async function mulaitanya() {
+        var { isConfirmed: tanyawal } = await swals.fire({
+          title: `Haloooo Ms Angelaaaa a.k.a My Only Love, My Forever xixi :D kamu bisa klik tombol dibawah ya baby angel dan maaf kalau jelek soalnya yang cantik cuma kamu`,
+          imageUrl: "https://i.postimg.cc/0j2LDLxP/heart-happy.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+          confirmButtonText: "Okay",
+          allowOutsideClick: false,
+          showCancelButton: false,
+        })
+        if (tanyawal) {
+          play()
+          kuis()
+        }
+      }
+
+      async function kuis() {
+        await swalst.fire({
+          title: "Gimana kabarnya hari ini sayangku, Lelah ya hari ini sekolahnya? :(",
+          imageUrl: "https://i.postimg.cc/02wF21b1/peach-goma.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Its okay babe, selamat ya udah bisa lewatin semua hal dihari ini ^^ i'm happy for you my sweetheart ♡",
+          imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Jangan lupa minum air putih ya, jangan minum yang manis manis terus, kan kamu udah manis jangan diambil semua :( ♡..",
+          imageUrl: "https://i.postimg.cc/vZWmnK2p/gigit.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        await swalst.fire({
+          title: "Maaf aku hanya bisa support kamu aja, kalau kamu butuh tempat cerita aku selalu ada buat kamu sampai kapanpun, karena aku punya kamu dan kamu punya aku (selamanya kan begitu) ♡ hehe&#129402;",
+          imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
+          imageWidth: 120,
+          imageHeight: 120,
+        })
+        text = "You always be my sweetheart my only love and i'm forever yours. I don't want anyone but you. It doesn't matter if we're a thousand miles apart or right next to each other, I will always want you. Because that's how it is when you find your forever and you know I wish I could live a thousand lives so I could fall in love with you a thousand times and my baby Angel must know that I'll choose you. No matter how hard it is. No matter what people say because You are what I want. I know I cannot force you to want me in return, but say that you do, and I promise that I am wholly and unequivocally yours. Say that you do, and I will make this world everything for you and the last is People say I love you to madness, but I love you to sanity, because loving you is the sanest thing I have ever done ♡"
+        emotnama = "&#10084;"
+        text2 = "Jaga diri baik-baik... Jangan terlalu sedih ya sehat sehat kamu sayang, kita ketemu nanti di bulan Mei sesuai dengan plan kita :) ♡ "
+        showDiv()
+      }
+      mulaitanya()
+    </script>
+  </body>
+</html>
